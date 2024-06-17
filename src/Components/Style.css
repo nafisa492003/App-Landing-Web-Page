@@ -1,0 +1,15 @@
+.bg-gradient-text {
+    background-image: linear-gradient(to right, #FFA979, #FF6231 );
+  }
+
+  .dotted-line {
+    border-bottom: 2px dotted rgba(175, 154, 245, 0.5);
+  }
+  .custom-list-disc {
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+  
+  .custom-list-disc li::marker {
+    color: #FF6231; /* Replace this with your desired color */
+  }
