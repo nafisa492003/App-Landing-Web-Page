@@ -4,6 +4,7 @@ import Side_title from "./Side_title";
 import { FaCircle } from "react-icons/fa6";
 import { LuDot } from "react-icons/lu";
 import { FiShare2 } from "react-icons/fi";
+import { Link } from "react-router-dom";
 const Artical = () => {
   return (
     <section className="my-[80px]">
@@ -12,7 +13,7 @@ const Artical = () => {
           <div className="w-full mx-auto lg:w-4/12">
           <Side_title title='read the latest news and articles'/>
           <p className="mt-[30px] mb-[50px] font-roboto font-normal text-[18px] text-hash w-full lg:w-[457px]">Culpa non ex tempor qui nulla laborum. Laboris culpa ea incididunt dolore ipsum tempor duis do ullamc.</p>
-          <a href="#" className="text-[12px] font-medium font-roboto text-custom_orange uppercase underline">read more</a>
+          <Link to='/blog' className="text-[12px] font-medium font-roboto text-custom_orange uppercase underline"> read more</Link>
           </div>
           <div className="w-full mx-auto rounded-[20px] lg:w-4/12 p-5 lg:p-10 shadow-xl">
           <h4 className="font-roboto font-medium text-[12px] text-custom_orange mb-1">Dec 10, 2020</h4>

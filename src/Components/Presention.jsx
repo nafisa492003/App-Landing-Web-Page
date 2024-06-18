@@ -13,7 +13,7 @@ import pre_one from '../assets/pre_one.png'
 import pre_two from '../assets/pre_two.png'
 import pre_three from '../assets/per_three.png'
 import pre_four from '../assets/pre_four.png'
-import pre_fivr from '../assets/pre_five.png'
+import pre_five from '../assets/pre_five.png'
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeftLong } from "react-icons/fa6";
 const Presention = () => {
@@ -22,7 +22,7 @@ const Presention = () => {
    style={{
     backgroundImage: `url(${presention_bg})`,
   }}
-   className='object-cover bg-no-repeat py-[280px] relative'>
+   className='object-cover bg-no-repeat py-[280px] relative w-full'>
     <Container>
         {/* title */}
         <div className="text-center mb-[60px] ">
@@ -42,50 +42,51 @@ const Presention = () => {
 
         {/* title */}
         <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2.5,
-        }}
-        navigation={{
-            nextEl: '.button-next-side',
-            prevEl: '.button-pre-side',
-            clickable: true,
-          }}
-        modules={[EffectCoverflow, Navigation]}
-        className="swiper_container"
+       effect={'coverflow'}
+       grabCursor={true}
+       centeredSlides={true}
+       loop={true}
+       slidesPerView={'auto'}
+       coverflowEffect={{
+         rotate: 0,
+         stretch: 0,
+         depth: 100,
+         modifier: 2.5,
+       }}
+       navigation={{
+         nextEl: '.button-next-side',
+         prevEl: '.button-pre-side',
+         clickable: true,
+       }}
+       modules={[EffectCoverflow, Navigation]}
+       className="swiper_container"
       >
-        <SwiperSlide className='md:w-[350px] mx-auto w-full'>
-          <img className='w-full'  src={pre_one} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide className='md:w-[350px] mx-auto w-full'>
-          <img className='w-full'  src={pre_two} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide className='md:w-[350px] mx-auto w-full'>
-          <img className='w-full'  src={pre_three} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide className='md:w-[350px] mx-auto w-full'>
-          <img className='w-full'  src={pre_four} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide className='md:w-[350px] mx-auto w-full'>
-          <img className='w-full'  src={pre_fivr} alt="slide_image" />
-        </SwiperSlide>
-          <div className="absolute top-[20px] w-full hidden lg:block">
-            <div className='flex items-center justify-between w-full'>
-              <div className="button-pre-side">
-                <FaArrowLeftLong size={40} className='text-white' />
-              </div>
-              <div className="button-next-side">
-                <FaArrowRight size={40} className='text-white' />
-              </div>
+         <SwiperSlide className='md:w-[350px] mx-auto w-full'>
+            <img className='w-full' src={pre_one} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide className='md:w-[350px] mx-auto w-full'>
+            <img className='w-full' src={pre_two} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide className='md:w-[350px] mx-auto w-full'>
+            <img className='w-full' src={pre_three} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide className='md:w-[350px] mx-auto w-full'>
+            <img className='w-full' src={pre_four} alt="slide_image" />
+          </SwiperSlide>
+          <SwiperSlide className='md:w-[350px] mx-auto w-full'>
+            <img className='w-full' src={pre_five} alt="slide_image" />
+          </SwiperSlide>
+         {/* Navigation Buttons */}
+         <div className="absolute top-[20px] w-full hidden lg:block">
+          <div className='flex items-center justify-between w-full'>
+            <div className="button-pre-side">
+              <FaArrowLeftLong size={40} className='text-white' />
+            </div>
+            <div className="button-next-side">
+              <FaArrowRight size={40} className='text-white' />
             </div>
           </div>
+        </div>
       </Swiper>
     </Container>
    </section>

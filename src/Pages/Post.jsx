@@ -1,5 +1,5 @@
-import React from "react";
-import Common_Banner from "../Components/Common_Banner";
+import React from 'react'
+import Common_Banner from '../Components/Common_Banner'
 import Container from "../Components/Container";
 import Flex from "../Components/Flex";
 import blog_img from "../assets/blog_img.png";
@@ -15,12 +15,11 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import moving from '../assets/moving.png'
 import { Link } from "react-router-dom";
-const Blog = () => {
+const Post = () => {
   return (
-    <section>
-        
-      <Common_Banner title="Blog" />
-      <div className="relative">
+      <section>
+       <Common_Banner title='Post'/>
+       <div className="relative">
       <img className='absolute hidden left-1 top-[320px] lg:block' src={moving} alt="" />
       <Container>
         <Flex className={`my-[100px] flex-col lg:flex-row gap-[50px]`}>
@@ -42,17 +41,7 @@ const Blog = () => {
                     </h1>
                   </div>
                 </div>
-                <div className="w-full p-10 rounded-b-[20px] shadow-xl">
-                  <h1 className="font-medium font-roboto text-[24px] uppercase">
-                    a selection of the best apps for 2020
-                  </h1>
-                  <p className="font-normal font-roboto text-[16px] text-hash my-3 w-full lg:w-[748px]">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                  <Flex className={`items-center justify-between`}>
-                    <Flex className={`items-center gap-2`}>
+                    <Flex className={`items-center gap-2 my-4`}>
                       <FaCircle size={20} className="text-[#BD93D8]" />
                       <span className="font-medium font-roboto text-[14px] text-black">
                         Annette Black
@@ -63,31 +52,9 @@ const Blog = () => {
                         Share
                       </span>
                     </Flex>
-                    <Link to='/post'>
-                    <BsArrowRight className="text-[40px] text-[#cccccc]" />
-                    
-                    </Link>
-                  </Flex>
-                </div>
-              </div>
-              <div>
-                <div className="relative">
-                  <img
-                    className="rounded-t-[20px] w-full"
-                    src={blog_img}
-                    alt=""
-                  />
-                  <div className="p-4 bg-custom_orange rounded-t-[10px] w-[60px] absolute bottom-[1px] left-10">
-                    <span className="font-medium font-roboto text-[14px] text-white mb-1">
-                      DEC
-                    </span>
-                    <h1 className="font-medium font-roboto text-[14px] md:text-[24px] text-white mb-1">
-                      06
-                    </h1>
-                  </div>
-                </div>
-                <div className="w-full p-10 rounded-b-[20px] shadow-xl">
-                  <h1 className="font-medium font-roboto text-[24px] uppercase">
+                    <div>
+                        
+                    <h1 className="font-medium font-roboto text-[24px] uppercase">
                     a selection of the best apps for 2020
                   </h1>
                   <p className="font-normal font-roboto text-[16px] text-hash my-3 w-full lg:w-[748px]">
@@ -95,68 +62,7 @@ const Blog = () => {
                     do amet sint. Velit officia consequat duis enim velit
                     mollit. Exercitation veniam consequat sunt nostrud amet.
                   </p>
-                  <Flex className={`items-center justify-between`}>
-                    <Flex className={`items-center gap-2`}>
-                      <FaCircle size={20} className="text-[#BD93D8]" />
-                      <span className="font-medium font-roboto text-[14px] text-black">
-                        Annette Black
-                      </span>
-                      <LuDot size={20} className="text-custom_orange" />
-                      <FiShare2 size={14} className="text-hash" />
-                      <span className="font-normal font-roboto text-[14px] text-hash">
-                        Share
-                      </span>
-                    </Flex>
-                    <Link to='/post'>
-                    <BsArrowRight className="text-[40px] text-[#cccccc]" />
-                    
-                    </Link>
-                  </Flex>
-                </div>
-              </div>
-              <div>
-                <div className="relative">
-                  <img
-                    className="rounded-t-[20px] w-full"
-                    src={blog_img}
-                    alt=""
-                  />
-                  <div className="p-4 bg-custom_orange rounded-t-[10px] w-[60px] absolute bottom-[1px] left-10">
-                    <span className="font-medium font-roboto text-[14px] text-white mb-1">
-                      DEC
-                    </span>
-                    <h1 className="font-medium font-roboto text-[14px] md:text-[24px] text-white mb-1">
-                      02
-                    </h1>
-                  </div>
-                </div>
-                <div className="w-full p-10 rounded-b-[20px] shadow-xl">
-                  <h1 className="font-medium font-roboto text-[24px] uppercase">
-                    a selection of the best apps for 2020
-                  </h1>
-                  <p className="font-normal font-roboto text-[16px] text-hash my-3 w-full lg:w-[748px]">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </p>
-                  <Flex className={`items-center justify-between`}>
-                    <Flex className={`items-center gap-2`}>
-                      <FaCircle size={20} className="text-[#BD93D8]" />
-                      <span className="font-medium font-roboto text-[14px] text-black">
-                        Annette Black
-                      </span>
-                      <LuDot size={20} className="text-custom_orange" />
-                      <FiShare2 size={14} className="text-hash" />
-                      <span className="font-normal font-roboto text-[14px] text-hash">
-                        Share
-                      </span>
-                    </Flex>
-                    <Link to='/post'>
-                    <BsArrowRight className="text-[40px] text-[#cccccc]" />
-                    
-                    </Link>
-                  </Flex>
-                </div>
+                    </div>
               </div>
             </Flex>
           </div>
@@ -283,8 +189,9 @@ const Blog = () => {
         </Flex>
       </Container>
       </div>
-    </section>
-  );
-};
 
-export default Blog;
+   </section>
+  )
+}
+
+export default Post
