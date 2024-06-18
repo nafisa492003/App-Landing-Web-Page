@@ -9,6 +9,7 @@ import RootLayout from './Components/RootLayout';
 import Home from './Pages/Home';
 import Blog from './Pages/Blog';
 import Post from './Pages/Post';
+import Oops from './Pages/Oops';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         <Route index element={<Home/>} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/post' element={<Post />} />
+        <Route path='/*' element={<Oops />} />
       </Route>
     </Route>
   )

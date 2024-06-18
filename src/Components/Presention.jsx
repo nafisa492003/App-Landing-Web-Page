@@ -77,13 +77,13 @@ const Presention = () => {
             <img className='w-full' src={pre_five} alt="slide_image" />
           </SwiperSlide>
          {/* Navigation Buttons */}
-         <div className="absolute top-[20px] w-full hidden lg:block">
+         <div className="absolute top-[0px] w-full hidden lg:block">
           <div className='flex items-center justify-between w-full'>
             <div className="button-pre-side">
-              <FaArrowLeftLong size={40} className='text-white' />
+              <FaArrowLeftLong size={20} className='text-white' />
             </div>
             <div className="button-next-side">
-              <FaArrowRight size={40} className='text-white' />
+              <FaArrowRight size={20} className='text-white' />
             </div>
           </div>
         </div>
