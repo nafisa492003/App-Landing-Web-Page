@@ -5,6 +5,9 @@ import Popular from '../Components/Popular';
 import Presention from '../Components/Presention';
 import UsePart from '../Components/UsePart';
 import About_us from '../Components/About_us';
+import Free_trail from '../Components/Free_trail';
+import Faq from '../Components/Faq';
+import Artical from '../Components/Artical';
 
 
 const Home = () => {
@@ -16,6 +19,9 @@ const Home = () => {
    <Presention/>
    <UsePart/>
    <About_us/>
+   <Free_trail/>
+   <Faq/>
+   <Artical/>
     </>
   )
 }

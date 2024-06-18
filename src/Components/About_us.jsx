@@ -15,7 +15,7 @@ const About_us = () => {
     <section className="mt-80px lg:mt-[130px]">
 
        
-        <div className="lg:max-w-[1500px] mx-auto relative">
+        <div className="lg:max-w-[1500px] mx-auto relative px-2">
         <Side_title title="they say about us" />
         <Swiper
           slidesPerView={3}
